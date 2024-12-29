@@ -34,7 +34,7 @@ export function NavMain({
 }) {
   return (
     <SidebarGroup>
-      <SidebarGroupLabel>Platform</SidebarGroupLabel>
+      {/*<SidebarGroupLabel>Platform</SidebarGroupLabel>*/}
       <SidebarMenu>
         {items.map((item) => (
           <Collapsible
@@ -45,7 +45,7 @@ export function NavMain({
           >
             <SidebarMenuItem>
               <CollapsibleTrigger asChild>
-                <SidebarMenuButton tooltip={item.title}>
+                <SidebarMenuButton tooltip={item.title} className={'text-[#A0A5A9] hover:text-white hover:bg-[#323232] border border-[#1D1D1D] hover:border-[#404040]'}>
                   {item.icon && <item.icon/>}
                   <span>{item.title}</span>
                   <ChevronRight
