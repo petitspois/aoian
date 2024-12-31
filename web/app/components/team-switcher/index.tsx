@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import {cn}  from '@/lib/utils'
+import {cn} from '@/lib/utils'
 import {ChevronsUpDown, Plus} from "lucide-react"
 
 import {
@@ -31,20 +31,19 @@ export function TeamSwitcher({
   }[]
 }) {
   const {isMobile, state} = useSidebar()
-  const [activeTeam, setActiveTeam] = React.useState(teams[0])
 
   return (
     <section
-      className={cn("data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground flex items-center p-5  gap-3", state === 'collapsed' && 'p-[18px]')}
+      className={cn("data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground flex items-center p-5 gap-3")}
     >
       <div
-        className="flex aspect-square size-11 items-center justify-center rounded-lg text-sidebar-primary-foreground">
+        className="flex aspect-square size-[42px] items-center justify-center rounded-lg text-sidebar-primary-foreground">
         <Image
           className="dark:invert"
           src="/aoian_logo.svg"
           alt="Aoian logo"
-          width={44}
-          height={44}
+          width={42}
+          height={42}
           priority
         />
       </div>

@@ -21,8 +21,9 @@ export default {
   				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
+  				DEFAULT: 'var(--primary)',
+  				foreground: 'var(--primary-foreground)',
+					border: 'var(--primary-border)'
   			},
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
@@ -52,13 +53,17 @@ export default {
   			},
   			sidebar: {
   				DEFAULT: 'var(--sidebar-background)',
-  				foreground: 'hsl(var(--sidebar-foreground))',
-  				primary: 'hsl(var(--sidebar-primary))',
-  				'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-  				accent: 'hsl(var(--sidebar-accent))',
-  				'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+  				foreground: 'var(--sidebar-foreground)',
   				border: 'var(--sidebar-border)',
-  				ring: 'hsl(var(--sidebar-ring))'
+					button: {
+						DEFAULT: 'var(--sidebar-button-background)',
+						foreground: 'var(--sidebar-button-foreground)',
+						accent: {
+							DEFAULT: 'var(--sidebar-button-accent-background)',
+							foreground: 'var(--sidebar-button-accent-foreground)',
+							border: 'var(--sidebar-button-accent-border)'
+						}
+					}
   			}
   		},
   		borderRadius: {
