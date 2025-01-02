@@ -491,6 +491,13 @@
   dependencies:
     "@radix-ui/react-use-layout-effect" "1.1.0"
 
+"@radix-ui/react-label@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.npmmirror.com/@radix-ui/react-label/-/react-label-2.1.1.tgz#f30bd577b26873c638006e4f65761d4c6b80566d"
+  integrity sha512-UUw5E4e/2+4kFMH7+YxORXGWggtY6sM8WIwh5RZchhLuUg2H1hc98Py+pr8HMz6rdaYrK2t296ZEjYLOCO5uUw==
+  dependencies:
+    "@radix-ui/react-primitive" "2.0.1"
+
 "@radix-ui/react-menu@2.1.4":
   version "2.1.4"
   resolved "https://registry.npmmirror.com/@radix-ui/react-menu/-/react-menu-2.1.4.tgz#ac7aec296f29608206a7c6ef6335d8f102edaa95"
@@ -3299,6 +3306,11 @@ use-callback-ref@^1.3.3:
   integrity sha512-jQL3lRnocaFtu3V00JToYz/4QkNWswxijDaCVNZRiRTO3HQDLsdu1ZtmIUvV4yPp+rvWm5j0y0TG/S61cuijTg==
   dependencies:
     tslib "^2.0.0"
+
+use-context-selector@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmmirror.com/use-context-selector/-/use-context-selector-2.0.0.tgz#3b5dafec7aa947c152d4f0aa7f250e99a205df3d"
+  integrity sha512-owfuSmUNd3eNp3J9CdDl0kMgfidV+MkDvHPpvthN5ThqM+ibMccNE0k+Iq7TWC6JPFvGZqanqiGCuQx6DyV24g==
 
 use-sidecar@^1.1.2:
   version "1.1.3"

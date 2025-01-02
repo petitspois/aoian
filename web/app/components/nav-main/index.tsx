@@ -17,6 +17,7 @@ import {
   SidebarMenuSubButton,
   SidebarMenuSubItem,
 } from "@/app/components/ui/sidebar"
+import {cn} from "@/lib/utils";
 
 export function NavMain({
                           items,
@@ -37,7 +38,7 @@ export function NavMain({
       <SidebarMenu>
         {items.map((item) => (
           <SidebarMenuItem key={item.title}>
-            <SidebarMenuButton tooltip={item.title}>
+            <SidebarMenuButton tooltip={item.title} className={cn(item?.key === 'new' && 'border-secondary-border bg-secondary text-accent hover:bg-accent hover:border-secondary-border')}>
               {item.icon && <item.icon size={20}/>}
               <span className={'text-sm'}>{item.title}</span>
             </SidebarMenuButton>

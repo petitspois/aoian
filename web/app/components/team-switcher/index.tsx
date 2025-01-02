@@ -34,7 +34,7 @@ export function TeamSwitcher({
 
   return (
     <section
-      className={cn("data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground flex items-center p-5 gap-3")}
+      className={cn("data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground flex items-center p-3 gap-3")}
     >
       <div
         className="flex aspect-square size-[42px] items-center justify-center rounded-lg text-sidebar-primary-foreground">

@@ -17,18 +17,18 @@ body {
         --popover: 0 0% 100%;
         --popover-foreground: 240 10% 3.9%;
         /*#38f*/
-        --primary: #0099FF;
-        /*#17181a*/
-        --primary-foreground: #FFFFFF;
-        --primary-border: #0991FE;
+        --primary: 240 5.9% 10%;
+        --primary-foreground: 0 0% 98%;
         /*rgba(0,30,89,.04)*/
-        --secondary: 240 4.8% 95.9%;
+        --secondary: rgba(0,136,255,.2);
         --secondary-foreground: 240 5.9% 10%;
+        --secondary-border: rgba(0,102,255,.3);
         /*tertiary rgba(0, 22, 65, .08)*/
         --muted: 240 4.8% 95.9%;
         --muted-foreground: 240 3.8% 46.1%;
-        --accent: 240 4.8% 95.9%;
-        --accent-foreground: 240 5.9% 10%;
+        --accent: #0099FF;
+        --accent-foreground: #FFFFFF;
+        --accent-border: #3EA1E4;
         --destructive: 0 84.2% 60.2%;
         --destructive-foreground: 0 0% 98%;
         --border: 240 5.9% 90%;
