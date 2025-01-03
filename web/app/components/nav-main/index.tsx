@@ -38,7 +38,7 @@ export function NavMain({
       <SidebarMenu>
         {items.map((item) => (
           <SidebarMenuItem key={item.title}>
-            <SidebarMenuButton tooltip={item.title} className={cn(item?.key === 'new' && 'border-secondary-border bg-secondary text-accent hover:bg-accent hover:border-secondary-border')}>
+            <SidebarMenuButton tooltip={item.title} className={cn(item?.key === 'new' && 'border-ghost-border bg-ghost text-standout hover:bg-standout hover:border-ghost-border')}>
               {item.icon && <item.icon size={20}/>}
               <span className={'text-sm'}>{item.title}</span>
             </SidebarMenuButton>

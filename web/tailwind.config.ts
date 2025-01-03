@@ -25,18 +25,26 @@ export default {
   				foreground: 'hsl(var(--primary-foreground))',
   			},
   			secondary: {
-  				DEFAULT: 'var(--secondary)',
-  				foreground: 'var(--secondary-foreground)',
-					border: 'var( --secondary-border)'
+  				DEFAULT: 'hsl(var(--secondary))',
+  				foreground: 'hsl(var(--secondary-foreground))',
   			},
   			muted: {
   				DEFAULT: 'hsl(var(--muted))',
   				foreground: 'hsl(var(--muted-foreground))'
   			},
   			accent: {
-  				DEFAULT: 'var(--accent)',
-  				foreground: 'var(--accent-foreground)',
-  				border: 'var(--accent-border)'
+  				DEFAULT: 'hsl(var(--accent))',
+  				foreground: 'hsl(var(--accent-foreground))',
+  			},
+        standout: {
+  				DEFAULT: 'var(--standout)',
+  				foreground: 'var(--standout-foreground)',
+  				border: 'var(--standout-border)',
+  			},
+        ghost: {
+  				DEFAULT: 'var(--ghost)',
+  				foreground: 'var(--ghost-foreground)',
+  				border: 'var(--ghost-border)',
   			},
   			destructive: {
   				DEFAULT: 'hsl(var(--destructive))',

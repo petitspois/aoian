@@ -1,6 +1,9 @@
+'use client'
 import type { Dispatch, SetStateAction } from "react";
 import { useCallback, useState } from "react";
 import { createContext, useContext, useContextSelector } from "use-context-selector";
+
+import LoginModal from '@/app/components/auth/login'
 
 
 export type ModalState<T> = {
@@ -14,12 +17,12 @@ export type ModalState<T> = {
 }
 
 export type ModalContextState = {
-  setShowAccountSettingModal: Dispatch<SetStateAction<ModalState<string> | null>>
+  setShowLoginModal: Dispatch<SetStateAction<ModalState<string> | null>>
 }
 
 
 const ModalContext = createContext<ModalContextState>({
-  setShowAccountSettingModal: () => {
+  setShowLoginModal: () => {
   },
 });
 
@@ -39,27 +42,36 @@ type ModalContextProviderProps = {
 export const ModalContextProvider = ({
   children,
 }: ModalContextProviderProps) => {
-  const [showAccountSettingModal, setShowAccountSettingModal] = useState<ModalState<string> | null>(null);
+  const [showLoginModal, setShowLoginModal] = useState<ModalState<string> | null>(null);
 
-  const handleCancelAccountSettingModal = () => {
-    setShowAccountSettingModal(null);
-    if (showAccountSettingModal?.onCancelCallback)
-      showAccountSettingModal?.onCancelCallback();
+  const handleCancelLoginModal = () => {
+    setShowLoginModal(null);
+    if (showLoginModal?.onCancelCallback)
+      showLoginModal?.onCancelCallback();
   };
 
-  const handleSaveAccountSettingModal = useCallback(() => {
-    if (showAccountSettingModal?.onSaveCallback)
-      showAccountSettingModal.onSaveCallback(showAccountSettingModal.payload);
-    setShowAccountSettingModal(null);
-  }, [showAccountSettingModal]);
+  const handleSaveLoginModal = useCallback(() => {
+    if (showLoginModal?.onSaveCallback)
+      showLoginModal.onSaveCallback(showLoginModal.payload);
+    setShowLoginModal(null);
+  }, [showLoginModal]);
 
   return (
     <ModalContext.Provider
       value={{
-        setShowAccountSettingModal,
+        setShowLoginModal,
       }}
     >
-      {children}
+      <>
+        {children}
+        {showLoginModal && (
+          <LoginModal
+            onCancel={handleCancelLoginModal}
+            onSave={handleSaveLoginModal}
+            payload={showLoginModal.payload}
+          />
+        )}
+      </>
     </ModalContext.Provider>
   );
 

@@ -6,7 +6,6 @@
       <option name="HTML_ATTRIBUTE_WRAP" value="0" />
       <option name="HTML_TEXT_WRAP" value="0" />
       <option name="HTML_ALIGN_ATTRIBUTES" value="false" />
-      <option name="HTML_SPACE_AROUND_EQUALITY_IN_ATTRIBUTE" value="true" />
       <option name="HTML_SPACE_INSIDE_EMPTY_TAG" value="true" />
     </HTMLCodeStyleSettings>
     <JSCodeStyleSettings version="0">
