@@ -12,14 +12,17 @@ export default {
       colors: {
         layout: {
           background: "var(--aa-background)",
+          normal: {
+            foreground: "var(--aa-normal-foreground)",
+          },
           muted: {
             background: "var(--aa-muted-background)",
           },
           card: {
             background: "var(--aa-card-background)",
           },
-          standout: {
-            foreground: "var(--aa-standout-foreground)"
+          primary: {
+            foreground: "var(--aa-primary-foreground)"
           },
         },
         border: "hsl(var(--border))",

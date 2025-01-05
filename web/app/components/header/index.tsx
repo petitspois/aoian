@@ -31,14 +31,14 @@ const Header = () => {
           <span className={'font-medium text-xl text-layout-standout-foreground'}>Aoian</span>
         </div>
       </div>
-      <div className={"header-right flex items-center w-fit gap-2"}>
+      <div className={"header-right flex items-center w-fit gap-4"}>
         <Button
           onClick={() => {
             setTheme(theme === "light" ? "dark" : "light");
           }}
           variant="ghost" size="icon">
-          <Sun size={20} className={"dark:scale-0"} />
-          <Moon size={20} className={"scale-0 dark:scale-100"} />
+          <Sun size={20} className={"dark:hidden"} />
+          <Moon size={20} className={"hidden dark:block"} />
           <span className="sr-only">Toggle theme</span>
         </Button>
         <Button onClick={handleShowLoginModal}>登录</Button>
