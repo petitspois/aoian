@@ -21,8 +21,6 @@ const Header = () => {
     });
   };
 
-
-  console.log(theme);
   return (
     <header className="flex justify-between items-center px-6 w-full h-[70px] bg-layout-card-background">
       <div className={"header-left"}>

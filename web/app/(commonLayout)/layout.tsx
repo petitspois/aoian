@@ -4,6 +4,8 @@ import Header from "@/app/components/header";
 import Main from "@/app/components/main";
 import { ModalContextProvider } from "@/context/modal-context";
 import { ThemeProvider } from "@/context/theme-provider";
+import { MenuContextProvider } from "@/context/menu-context";
+
 
 export default function Layout({
   children,
@@ -18,10 +20,12 @@ export default function Layout({
       disableTransitionOnChange
     >
       <ModalContextProvider>
-        <Container>
-          <Header />
-          <Main />
-        </Container>
+        <MenuContextProvider>
+          <Container>
+            <Header />
+            <Main />
+          </Container>
+        </MenuContextProvider>
       </ModalContextProvider>
     </ThemeProvider>
   );

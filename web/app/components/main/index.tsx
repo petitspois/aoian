@@ -1,31 +1,38 @@
-'use client'
-import React from 'react';
-import { Button } from '@/app/components/ui/button'
-import { useModalContext } from '@/context/modal-context'
-import Navigation from '@/app/components/navigation'
+"use client";
+import React from "react";
+import { Button } from "@/app/components/ui/button";
+import { useModalContext } from "@/context/modal-context";
+import Navigation from "@/app/components/navigation";
 import Sidebar from "@/app/components/sidebar";
-import Chat from '@/app/components/chat'
+import Chat from "@/app/components/chat";
 import Message from "@/app/components/message";
+import { useMenuContext } from "@/context/menu-context";
 
 const Main = () => {
+  const { activeKey: currentMenu } = useMenuContext();
   const { setShowLoginModal } = useModalContext();
 
   const handleShowLoginModal = () => {
     setShowLoginModal({
-      payload: '',
+      payload: "",
       onCancelCallback: () => {
-        console.log('cancel');
+        console.log("cancel");
       },
       onSaveCallback: (newPayload) => {
-        console.log('save', newPayload);
+        console.log("save", newPayload);
       },
     });
-  }
+  };
+
+  console.log(currentMenu);
 
   return (
     <main className="flex p-6 w-full h-[calc(100vh-80px)] gap-6">
       <Navigation />
-      <Sidebar />
+      {
+        currentMenu === "chat" &&
+        <Sidebar />
+      }
       <Chat />
       <Message />
     </main>

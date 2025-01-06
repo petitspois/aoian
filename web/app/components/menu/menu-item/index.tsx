@@ -19,7 +19,7 @@ const MenuItem = ({ label, id, href, icon}: MenuItemProps) => {
         <span className={cn('text-layout-normal-foreground')}>{icon}</span>
         <span className={cn('text-base', activeKey === id && 'font-medium')}>{label}</span>
       </div>
-      <div className={cn(`absolute right-[3px] top-0 w-[3px] h-full bg-layout-primary-foreground dark:bg-layout-normal-foreground rounded-full transition-opacity duration-1000 opacity-0`, activeKey === id && 'opacity-100')}></div>
+      <div className={cn(`absolute right-[3px] top-0 w-[3px] h-full bg-layout-primary dark:bg-layout-normal-foreground rounded-full transition-opacity duration-1000 opacity-0`, activeKey === id && 'opacity-100')}></div>
     </Link>
   );
 };

@@ -9,10 +9,16 @@ body {
 @layer base {
     :root {
         --aa-background: #F1F3F9;
-        --aa-muted-background: #F9FAFE;
+        --aa-muted-background: #F8FAFC;
         --aa-card-background:#FFFFFF;
         --aa-normal-foreground: #18181b;
-        --aa-primary-foreground: #00A9FF;
+        --aa-primary-foreground: #FFFFFF;
+        --aa-primary-background: #0091FF;
+        --aa-secondary-background: #0D7CFE;
+        --aa-standout-background: #F1F3F9;
+        --aa-disabled-foreground: #9BABC5;
+        --aa-disabled-background: #F6F7FA;
+        --aa-line-background: #ECEEF3;
         --background: 0 0% 100%;
         --foreground: #9BABC5;
         --card: 0 0% 100%;
@@ -40,7 +46,13 @@ body {
         --aa-muted-background: #161616;
         --aa-card-background: #1B1B1B;
         --aa-normal-foreground: #FFFFFF;
-        --aa-primary-foreground: #344CB7;
+        --aa-primary-foreground: #FFFFFF;
+        --aa-primary-background: #0091FF;
+        --aa-secondary-background: #0D7CFE;
+        --aa-standout-background: #2D2D2D;
+        --aa-disabled-foreground: #9BABC5;
+        --aa-disabled-background: #2D2D2D;
+        --aa-line-background: #303030;
         --background: 240 10% 3.9%;
         --foreground: #9AABC5;
         --card: 240 10% 3.9%;

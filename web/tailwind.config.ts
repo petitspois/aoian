@@ -22,8 +22,21 @@ export default {
             background: "var(--aa-card-background)",
           },
           primary: {
-            foreground: "var(--aa-primary-foreground)"
+            DEFAULT: "var(--aa-primary-background)",
+            foreground: "var(--aa-primary-foreground)",
           },
+          standout: {
+            DEFAULT: "var(--aa-standout-background)",
+          },
+          disabled: {
+            foreground: "var(--aa-disabled-foreground)",
+          },
+          secondary: {
+            DEFAULT: "var(--aa-secondary-background)",
+          },
+          line: {
+            DEFAULT: "var(--aa-line-background)"
+          }
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

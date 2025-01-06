@@ -24,7 +24,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: 'exploration',
     label: '发现',
-    href: '/exploration',
+    href: '/chat/exploration',
     icon: <Telescope />
   },
 ]
@@ -47,13 +47,15 @@ export const MenuContextProvider = ({
 }: MenuContextProviderProps) => {
   const pathname = usePathname()
   const activeKey = useMemo<MenuKey>(() => {
-    if (pathname.startsWith('/chat')) {
-      return 'chat'
-    } else if (pathname.startsWith('/exploration')) {
+    if (pathname.startsWith('/chat/exploration')) {
       return 'exploration'
+    } else if (pathname.startsWith('/chat')) {
+      return 'chat'
     }
     return 'chat'
   }, [pathname])
+
+  console.log(activeKey, 'activeKey');
 
   return (
     <MenuContext.Provider
