@@ -672,6 +672,11 @@
   resolved "https://registry.npmmirror.com/@radix-ui/rect/-/rect-1.1.0.tgz#f817d1d3265ac5415dadc67edab30ae196696438"
   integrity sha512-A9+lCBZoaMJlVKcRBz2YByCG+Cp2t6nAnMnNba+XiWxnj6r4JUFqfsgwocMBZU9LPtdxC6wB56ySYpc7LQIoJg==
 
+"@remixicon/react@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.npmmirror.com/@remixicon/react/-/react-4.6.0.tgz#c25276338b4d7acd29075c5b26a20f19feecac04"
+  integrity sha512-bY56maEgT5IYUSRotqy9h03IAKJC85vlKtWFg2FKzfs8JPrkdBAYSa9dxoUSKFwGzup8Ux6vjShs9Aec3jvr2w==
+
 "@rtsao/scc@^1.1.0":
   version "1.1.0"
   resolved "https://registry.npmmirror.com/@rtsao/scc/-/scc-1.1.0.tgz#927dd2fae9bc3361403ac2c7a00c32ddce9ad7e8"
