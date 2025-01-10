@@ -17,7 +17,7 @@ const Sidebar = () => {
       </div>
       <div className={'mt-6'}>
         <Tabs defaultValue="account">
-          <TabsList className={'bg-layout-standout h-14 rounded-[20px] p-2.5 w-full'}>
+          <TabsList className={'bg-layout-disabled h-14 rounded-[20px] p-2.5 w-full'}>
             <TabsTrigger className={'h-[34px] rounded-[10px] text-sm grow data-[state=active]:text-layout-primary text-layout-disabled-foreground'} value="account">收藏</TabsTrigger>
             <TabsTrigger className={'h-[34px] rounded-[10px] text-sm grow data-[state=active]:text-layout-primary text-layout-disabled-foreground'} value="password">其他</TabsTrigger>
           </TabsList>

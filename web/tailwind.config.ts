@@ -29,6 +29,7 @@ export default {
             DEFAULT: "var(--aa-standout-background)",
           },
           disabled: {
+            DEFAULT: "var(--aa-disabled-background)",
             foreground: "var(--aa-disabled-foreground)",
           },
           secondary: {

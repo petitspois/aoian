@@ -1,11 +1,12 @@
 "use client"
 
 import * as React from "react"
+import Conversation from "@/app/components/chat/conversation";
 
 const Chat = () => {
   return (
-    <section className={'grow w-[240px] rounded-[20px] bg-layout-background'}>
-      Chat
+    <section className={'grow rounded-[20px] overflow-hidden bg-layout-background'}>
+      <Conversation />
     </section>
   )
 }
