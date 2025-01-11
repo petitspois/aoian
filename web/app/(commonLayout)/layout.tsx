@@ -23,7 +23,9 @@ export default function Layout({
         <MenuContextProvider>
           <Container>
             <Header />
-            <Main />
+            <Main>
+              {children}
+            </Main>
           </Container>
         </MenuContextProvider>
       </ModalContextProvider>

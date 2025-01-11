@@ -4,11 +4,15 @@ import { Button } from "@/app/components/ui/button";
 import { useModalContext } from "@/context/modal-context";
 import Navigation from "@/app/components/navigation";
 import Sidebar from "@/app/components/sidebar";
-import Chat from "@/app/components/chat";
+import Content from "@/app/components/content";
 import Message from "@/app/components/message";
 import { useMenuContext } from "@/context/menu-context";
 
-const Main = () => {
+type MainProps = Readonly<{
+  children: React.ReactNode;
+}>;
+
+const Main = ({ children }: MainProps) => {
   const { activeKey: currentMenu } = useMenuContext();
   const { setShowLoginModal } = useModalContext();
 
@@ -24,8 +28,6 @@ const Main = () => {
     });
   };
 
-  console.log(currentMenu);
-
   return (
     <main className="flex p-6 w-full h-[calc(100vh-80px)] gap-6">
       <Navigation />
@@ -33,7 +35,9 @@ const Main = () => {
         currentMenu === "chat" &&
         <Sidebar />
       }
-      <Chat />
+      <Content>
+        {children}
+      </Content>
       <Message />
     </main>
   );
