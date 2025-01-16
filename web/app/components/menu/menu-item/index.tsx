@@ -8,7 +8,7 @@ export type MenuItemProps = {
   id: string;
   label: string
   href: string
-  icon: any;
+  icon: React.ReactNode;
 };
 
 const MenuItem = ({ label, id, href, icon}: MenuItemProps) => {

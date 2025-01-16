@@ -1,3 +1,4 @@
+import React from "react";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 import { Dialog, DialogContent, DialogTitle } from "@/app/components/ui/dialog";
 import { cn } from "@/lib/utils";
@@ -43,7 +44,8 @@ const Modal = ({
     >
       <DialogContent
         onPointerDownOutside={(e) => {
-          !maskClosable && e.preventDefault();
+          if (!maskClosable)
+            e.preventDefault();
         }}
         className={cn("max-w-fit", wrapperClassName)} closeClassName={closeClassName}>
         <VisuallyHidden.Root>

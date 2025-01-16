@@ -9,13 +9,13 @@ import Modal from "@/app/components/modal";
 import { ExternalDataTool } from "@/models/auth";
 
 type LoginModalProps = {
-  data: ExternalDataTool
+  payload: string;
   onCancel: () => void
   onSave: (externalDataTool: ExternalDataTool) => void
 }
 
 const LoginModal: FC<LoginModalProps> = ({
-  data,
+  payload,
   onCancel,
   onSave,
 }) => {
