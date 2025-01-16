@@ -29,7 +29,7 @@ const Main = ({ children }: MainProps) => {
   };
 
   return (
-    <main className="flex p-6 w-full h-[calc(100vh-80px)] gap-6">
+    <main className="flex p-6 w-full h-[calc(100vh-70px)] gap-6">
       <Navigation />
       {
         currentMenu === "chat" &&
